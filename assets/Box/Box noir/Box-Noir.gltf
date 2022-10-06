@@ -1,0 +1,205 @@
+{
+    "asset": {
+        "copyright": "2020 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - 3de52ae4ccc0c25be48106335282fae5a6a58dee",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 36464,
+            "type": "VEC3",
+            "max": [
+                0.1520688235759735,
+                0.2326234132051468,
+                0.05699629709124565
+            ],
+            "min": [
+                -0.1520688235759735,
+                0.0,
+                -0.05699629709124565
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 36464,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 36464,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 54696,
+            "type": "SCALAR",
+            "max": [
+                36463.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 437568,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 437568,
+            "byteLength": 437568,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 875136,
+            "byteLength": 291712,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1166848,
+            "byteLength": 218784,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1385632,
+            "uri": "Box-Noir_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.000010000000656873454,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "images": [
+        {
+            "name": "composited_baseColor_opacity",
+            "uri": "Box-Noir_images/composited_baseColor_opacity.png",
+            "mimeType": "image/png"
+        },
+        {
+            "name": "composited_roughness",
+            "uri": "Box-Noir_images/composited_roughness.png",
+            "mimeType": "image/png"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.0,
+                "metallicRoughnessTexture": {
+                    "index": 1
+                }
+            },
+            "alphaMode": "MASK",
+            "name": "Plastique",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "rectangular_packaging_box_1500",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                0.5,
+                0.29999998211860659,
+                0.6163117289543152
+            ],
+            "rotation": [
+                -0.12059047073125839,
+                0.379409521818161,
+                0.04995020851492882,
+                0.9159756302833557
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "translation": [
+                2.2652064465567827e-15,
+                0.056996364146471027,
+                0.11631173640489578
+            ],
+            "rotation": [
+                -0.70710688829422,
+                8.06193931328792e-15,
+                -2.9453296457304918e-15,
+                0.7071067094802856
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.000000238418579,
+                1.000000238418579
+            ],
+            "mesh": 0,
+            "name": "rectangular_packaging_box_1500"
+        }
+    ],
+    "samplers": [
+        {},
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "textures": [
+        {
+            "name": "composited_baseColor_opacity",
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "name": "composited_roughness",
+            "sampler": 1,
+            "source": 1
+        }
+    ],
+    "scene": 0
+}
