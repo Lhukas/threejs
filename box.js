@@ -1,52 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <style>
-
-        .container-box{
-         height: 300px;
-            width: 300px;
-            position: relative;
-        }
-        #background-video {
-         width: 100%;
-          height: 100%;
-        object-fit: cover;
-        position: absolute;
-          object-fit: cover;
-          z-index: 0;
-        }
-        
-        .webgl{
-            position: absolute;
-        }
-        
-            </style>
-
-    </style>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-
-    <div class="container-box" id="container-box">
-
-        <video id="background-video" playsinline autoplay muted loop>
-            <source src="https://cdn.shopify.com/videos/c/o/v/b509a4a110914458b795590a8be46005.mp4" type="video/mp4">
-        </video>
-        
-         <canvas class="webgl"></canvas> 
-        </div>
-    
-</body>
-</html> 
-
-<script type="module">
-import * as THREE from 'https://cdn.skypack.dev/three@0.128.0/build/three.module.js';
+    import * as THREE from 'https://cdn.skypack.dev/three@0.128.0/build/three.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/GLTFLoader.js';
 import { OBJLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/OBJLoader.js';
@@ -59,11 +12,9 @@ const scene = new THREE.Scene()
 const loader = new GLTFLoader();
 var box = null;
 
-
-
 const sizes = {
-    width : document.getElementById("container-box").offsetWidth,
-    height : document.getElementById("container-box").offsetHeight+50
+    width : window.innerWidth,
+    height : window.innerHeight
 }
 
 
@@ -169,4 +120,3 @@ function animate(){
 
 animate()
 
-</script>

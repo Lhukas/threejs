@@ -15,9 +15,9 @@
     "nodes" : [
         {
             "scale": [
-            75,
-            75,
-            75
+            80,
+            80,
+            80
         ],
             "mesh" : 0,
             "name" : "rectangular_packaging_box_1500",
